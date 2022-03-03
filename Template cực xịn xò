@@ -1,0 +1,52 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+//#pragma GCC optimize("Ofast,unroll-loops")
+//#pragma GCC target("avx,avx2,avx512,fma")
+
+#define FOR(i,a,b) for(int i=(a);i<=(int)(b);++i)
+#define FORD(i,a,b) for(int i=(a);i>=(int)(b);--i)
+#define REP(i,a,b) for(int i=(a);i<(int)(b);++i)
+#define ll long long
+#define ld long double
+#define sz(a) ((int)a.size())
+#define len(a) ((int)a.size())
+#define all(a) (a).begin(), (a).end()
+#define mp make_pair
+#define pb push_back
+#define fi first
+#define se second
+#define imax INT_MAX
+#define imin INT_MIN
+#define endl "\n"
+
+////////////////////ENTER YOUR CODE BELOW////////////////////
+
+void solve()
+{
+    
+}
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL); cout.tie(NULL);
+    
+    int tc = 1;
+    //cin >> tc;
+
+    while (tc--) {
+        solve();
+    }
+    return 0;
+}
+
+
+
+// CODED BY:
+//  _____         _   __               _____ _       _   __      _
+// |_   _|       | | / /              /  ___(_)     | | / /     | |
+//   | | ___ _ __| |/ /  ___ _ __ _ __\ `--. _ _   _| |/ / _   _| |_ ___  ___ 
+//   | |/ _ \ '__|    \ / _ \ '__| '__|`--. \ | | | |    \| | | | __/ _ \/ _ \
+//   | |  __/ |  | |\  \  __/ |  | |  /\__/ / | |_| | |\  \ |_| | ||  __/  __/
+//   \_/\___|_|  \_| \_/\___|_|  |_|  \____/|_|\__,_\_| \_/\__,_|\__\___|\___|
