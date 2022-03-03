@@ -11,7 +11,7 @@ using namespace std;
 #define ld long double
 #define sz(a) ((int)a.size())
 #define ms(a, b) memset(a, (b), sizeof(a))
-#define len(a) ((int)a.size())
+#define len(a) ((int)a.length())
 #define all(a) (a).begin(), (a).end()
 #define mp make_pair
 #define pb push_back
