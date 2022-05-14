@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+using namespace std::chrono;
  
 using ll = long long;
 using ull = unsigned long long;
@@ -91,7 +92,7 @@ template<class T> T qpow(T a,ll b) { T r = 1; do { if (b & 1) r *= a; a *= a; } 
 // check if N is power of 2
 bool ispow2(ll n) { return n && (n & -n) == n; }
 
-// #define TIMER // <--- enable if you need to know the excution time :333
+#define TIMER // <--- enable if you need to know the excution time :333
 // #define USACO
 
 inline namespace FileIO
