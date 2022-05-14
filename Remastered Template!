@@ -92,12 +92,12 @@ bool ispow2(ll n) { return n && (n & -n) == n; }
 
 inline namespace FileIO
 {
-	void setIn(str s)  { freopen(s.c_str(),"r",stdin); }
-	void setOut(str s) { freopen(s.c_str(),"w",stdout); }
-	void setIO(str s = "") {
-		ios_base::sync_with_stdio(false);
+    void setIn(str s)  { freopen(s.c_str(),"r",stdin); }
+    void setOut(str s) { freopen(s.c_str(),"w",stdout); }
+    void setIO(str s = "") {
+        ios_base::sync_with_stdio(false);
         cin.tie(NULL); cout.tie(NULL);
-		if (len(s)) {
+        if (len(s)) {
             #ifdef USACO
             setIn(s+".in"), setOut(s+".out");
             #else
@@ -121,7 +121,7 @@ int main()
     auto start = high_resolution_clock::now();
     #endif
 
-	setIO();
+    setIO();
 
     int tc = 1;
     // cin >> tc; // More than 1 testcase?
