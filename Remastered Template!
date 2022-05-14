@@ -60,7 +60,7 @@ template<class T> int upb(V<T>& a, const T& b) { return (int) (ub(all(a),b) - bg
 // in and out
 #define setp(x) fixed << setprecision((int) x)
 #define endl "\n"
-template<class T,class U> ostream& operator<<(ostream& os, const pair<T,U>& p) { return os << "{"<< p.fi << "," << p.se << "}"; }
+template<class T, class U> ostream& operator<<(ostream& os, const pair<T,U>& p) { return os << "{" << p.fi << "," << p.se << "}"; }
 template<class T> ostream& operator<<(ostream& os, const V<T>& v) { os << "{"; REP(i,0,sz(v) - 1) os << v[i] << ","; return os << v[sz(v) - 1] << "}"; }
 
 const int MOD = (int) 1e9 + 7; // 998244353;
@@ -113,7 +113,7 @@ inline namespace FileIO
 
 void solve()
 {
-
+    
 }
 
 int main()
