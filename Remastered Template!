@@ -109,7 +109,6 @@ inline namespace FileIO
 
 // #define TIMER // <--- enable if you need to know the excution time :333
 // #define USACO
-// #define DEBUGINFILE
 
 void solve()
 {
