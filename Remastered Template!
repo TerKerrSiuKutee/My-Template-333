@@ -86,7 +86,7 @@ template<class T> bool ckmax(T& a, const T& b) { return a < b ? a = b, 1 : 0; } 
 template<class T> void remDup(vector<T>& v) { sort(all(v)); v.erase(unique(all(v)),end(v)); }
 
 // hmm quick power
-template<class T> T qpow(T a,ll b) { T r = 1; do { if (b & 1) r *= a; a *= a; } while (b >>= 1); return r; }
+template<class T> T qpow(T a, ll b) { T r = 1; do { if (b & 1) r *= a; a *= a; } while (b >>= 1); return r; }
 
 // check if N is power of 2
 bool ispow2(ll n) { return n && (n & -n) == n; }
