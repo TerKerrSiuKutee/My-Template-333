@@ -1,6 +1,23 @@
 #include <bits/stdc++.h>
 using namespace std;
- 
+
+// ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+// ░░░░░░░░░░▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄░░░░░░░░░░░
+// ░░░░░░░░▄▀░░░░░░░░░░░░░░▄░░░░░░░▀▄░░░░░░░░░
+// ░░░░░░░░█░░▄░░░░▄░░░░░░░░░░░░░░░░░░█░░░░░░░
+// ░░░░░░░░█░░░░░░░░░░░░░░░░▄█▄▄░░▄░░░█░▄▄▄░░░
+// ░▄▄▄▄▄░░█░░░░░░▀░░░░░░░░▀█░░▀▄░░░░░█▀▀░██░░
+// ░██▄▀██▄█░░░▄░░░░░░░░░░░██░░░░▀▀▀▀▀░░░░██░░
+// ░░▀██▄▀██░░░░░░░░▀░░░░░██▀░░░░░░░░░░░░░▀██░
+// ░░░░▀████░▀░░░░▄░░░░░░░██░░░▄█░░░░▄░▄█░░██░
+// ░░░░░░░▀█░░░░▄░░░░░░░░░██░░░░▄░░░▄░░▄░░░██░
+// ░░░░░░░▄█▄░░░░░░░░░░░░░░░▀▄░░▀▀▀▀▀▀▀▀░░▄▀░░
+// ░░░░░░█▀▀█████████▀▀▀▀▀▀▀▀████████████▀░░░░
+// ░░░░░░████▀░░███▀░░░░░░░░░░▀███░░▀██▀░░░░░░
+// ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+// CATS! WHAT I NEED IS CATS AND YOU (ALSO KITTENS, THEY ARE CUTE :33)! EXACTLY, YOU, MY ONLY LOVE, THUDAO <3
+
 using ll = long long;
 using ull = unsigned long long;
 using db = double;
@@ -38,15 +55,12 @@ using vpld = V<pld>;
 
 #define sz(x) (int) (x).size()
 #define len(x) (int) (x).length()
-#define bg(x) begin(x)
-#define all(x) bg(x), end(x)
+#define all(x) x.begin(), x.end()
 #define rall(x) x.rbegin(), x.rend()
 #define rsz resize
 #define ins insert 
 #define pb push_back
 #define eb emplace_back
-#define ft front()
-#define bk back()
 
 // others
 template<class T> using pqg = priority_queue<T,vector<T>,greater<T>>;
@@ -54,14 +68,14 @@ template<class T> using pqg = priority_queue<T,vector<T>,greater<T>>;
 
 #define lb lower_bound
 #define ub upper_bound
-template<class T> int lwb(V<T>& a, const T& b) { return (int) (lb(all(a),b) - bg(a)); }
-template<class T> int upb(V<T>& a, const T& b) { return (int) (ub(all(a),b) - bg(a)); }
+template<class T> int lwb(V<T>& a, const T& b) { return (int) (lb(all(a), b) - bg(a)); }
+template<class T> int upb(V<T>& a, const T& b) { return (int) (ub(all(a), b) - bg(a)); }
 
 // in and out
 #define setp(x) fixed << setprecision((int) x)
 #define endl "\n"
 template<class T, class U> ostream& operator<<(ostream& os, const pair<T,U>& p) { return os << "{" << p.fi << "," << p.se << "}"; }
-template<class T> ostream& operator<<(ostream& os, const V<T>& v) { os << "{"; REP(i,0,sz(v) - 1) os << v[i] << ","; return os << v[sz(v) - 1] << "}"; }
+template<class T> ostream& operator<<(ostream& os, const V<T>& v) { os << "{"; REP(i, 0, sz(v) - 1) os << v[i] << ","; return os << v[sz(v) - 1] << "}"; }
 
 const int MOD = (int) 1e9 + 7; // 998244353;
 const int MAXN = (int) 2e5 + 5;
@@ -74,7 +88,7 @@ const vi d8x = { -1, -1, 0, 1, 1, 1, 0, -1 }, d8y = { 0, 1, 1, 1, 0, -1, -1, -1 
 
 // SOME USEFULL STUFFS !!!
 
-constexpr ll p2(ll x) { return 1 << x; }
+constexpr ll p2(ll x) { return 1LL << x; }
 
 ll cdiv(ll a, ll b) { return a / b + ((a ^ b) > 0 && a % b); } // divide a by b rounded up
 ll fdiv(ll a, ll b) { return a / b - ((a ^ b) < 0 && a % b); } // divide a by b rounded down
@@ -83,7 +97,7 @@ template<class T> bool ckmin(T& a, const T& b) { return b < a ? a = b, 1 : 0; } 
 template<class T> bool ckmax(T& a, const T& b) { return a < b ? a = b, 1 : 0; } // a = max(a,b);
 
 // sort and remove duplicates
-template<class T> void remDup(vector<T>& v) { sort(all(v)); v.erase(unique(all(v)),end(v)); }
+template<class T> void remDup(vector<T>& v) { sort(all(v)); v.erase(unique(all(v)), v.end()); }
 
 // hmm quick power
 template<class T> T qpow(T a, ll b) { T r = 1; do { if (b & 1) r *= a; a *= a; } while (b >>= 1); return r; }
@@ -92,22 +106,12 @@ template<class T> T qpow(T a, ll b) { T r = 1; do { if (b & 1) r *= a; a *= a; }
 bool ispow2(ll n) { return n && (n & -n) == n; }
 
 // #define TIMER // <--- enable if you need to know the excution time :333
-// #define USACO
 
-inline namespace FileIO
+void setIO(string NAME = "")
 {
-    void setIn(str s)  { freopen(s.c_str(),"r",stdin); }
-    void setOut(str s) { freopen(s.c_str(),"w",stdout); }
-    void setIO(str s = "") {
-        ios_base::sync_with_stdio(false);
-        cin.tie(NULL); cout.tie(NULL);
-        if (len(s)) {
-            #ifdef USACO
-            setIn(s + ".in"), setOut(s + ".out");
-            #else
-            setIn(s + ".inp"), setOut(s + ".out");
-            #endif
-        }
+    if((int) NAME.length() && fopen((NAME + ".inp").c_str(), "r")) {
+        freopen((NAME + ".inp").c_str(), "r", stdin);
+        freopen((NAME + ".out").c_str(), "w", stdout);
     }
 }
 
@@ -147,3 +151,8 @@ int main()
 //   | |/ _ \ '__|    \ / _ \ '__| '__|`--. \ | | | |    \| | | | __/ _ \/ _ \
 //   | |  __/ |  | |\  \  __/ |  | |  /\__/ / | |_| | |\  \ |_| | ||  __/  __/
 //   \_/\___|_|  \_| \_/\___|_|  |_|  \____/|_|\__,_\_| \_/\__,_|\__\___|\___|
+
+// SOME PROGRAMMING QUOTES THAT I HAVE COLLECTED, HOPE IT IS HELPFUL <3
+// "Any fool can write code that a computer can understand. Good programmers write code that humans can understand." – Martin Fowler
+// “Experience is the name everyone gives to their mistakes.” – Oscar Wilde
+// “Perfection is achieved not when there is nothing more to add, but rather when there is nothing more to take away.” – Antoine de Saint-Exupery
