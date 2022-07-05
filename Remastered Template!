@@ -109,6 +109,8 @@ bool ispow2(ll n) { return n && (n & -n) == n; }
 
 void setIO(string NAME = "")
 {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL); cout.tie(NULL);
     if((int) NAME.length() && fopen((NAME + ".inp").c_str(), "r")) {
         freopen((NAME + ".inp").c_str(), "r", stdin);
         freopen((NAME + ".out").c_str(), "w", stdout);
